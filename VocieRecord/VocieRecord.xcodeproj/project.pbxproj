@@ -12,6 +12,11 @@
 		A51AD3C32BD29BBE0067FE32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A51AD3C22BD29BBE0067FE32 /* Preview Assets.xcassets */; };
 		A51AD3FE2BD29EF90067FE32 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A51AD3FD2BD29EF90067FE32 /* LaunchScreen.storyboard */; };
 		A51AD4002BD29FCA0067FE32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A51AD3FF2BD29FCA0067FE32 /* AppDelegate.swift */; };
+		A530DD4D2BD387B600F9A5C6 /* PathType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD4C2BD387B600F9A5C6 /* PathType.swift */; };
+		A530DD4F2BD387BB00F9A5C6 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD4E2BD387BB00F9A5C6 /* Path.swift */; };
+		A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD502BD3894E00F9A5C6 /* HomeView.swift */; };
+		A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD522BD3896700F9A5C6 /* TodoView.swift */; };
+		A530DD552BD3897200F9A5C6 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD542BD3897200F9A5C6 /* MemoView.swift */; };
 		A5BDA9C42BD2A81400595D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA9C32BD2A81400595D46 /* Assets.xcassets */; };
 		A5BDA9C62BD2AADF00595D46 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */; };
 		A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */; };
@@ -48,6 +53,11 @@
 		A51AD3D22BD29BBE0067FE32 /* VocieRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocieRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51AD3FD2BD29EF90067FE32 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51AD3FF2BD29FCA0067FE32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A530DD4C2BD387B600F9A5C6 /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
+		A530DD4E2BD387BB00F9A5C6 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		A530DD502BD3894E00F9A5C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		A530DD522BD3896700F9A5C6 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
+		A530DD542BD3897200F9A5C6 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
 		A5BDA9C32BD2A81400595D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -209,6 +219,7 @@
 		A51AD3EE2BD29C810067FE32 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A530DD502BD3894E00F9A5C6 /* HomeView.swift */,
 				A51AD3F02BD29C8B0067FE32 /* TodoList */,
 				A51AD3F42BD29CB60067FE32 /* MemoList */,
 				A51AD3F32BD29C910067FE32 /* VoiceRecorder */,
@@ -267,6 +278,7 @@
 		A51AD3F52BD29CF40067FE32 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				A530DD522BD3896700F9A5C6 /* TodoView.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -274,6 +286,7 @@
 		A51AD3F62BD29CFD0067FE32 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				A530DD542BD3897200F9A5C6 /* MemoView.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -317,6 +330,8 @@
 		A51AD3FC2BD29D170067FE32 /* Path */ = {
 			isa = PBXGroup;
 			children = (
+				A530DD4C2BD387B600F9A5C6 /* PathType.swift */,
+				A530DD4E2BD387BB00F9A5C6 /* Path.swift */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -454,13 +469,18 @@
 			files = (
 				A5BDA9C62BD2AADF00595D46 /* OnboardingContent.swift in Sources */,
 				A5C61E1E2BD2A4DA00193137 /* Double+Extensions.swift in Sources */,
+				A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */,
+				A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */,
 				A5C61E202BD2A4E100193137 /* Color+Extensions.swift in Sources */,
 				A5BDA9CA2BD2ABE200595D46 /* OnboardingView.swift in Sources */,
 				A51AD4002BD29FCA0067FE32 /* AppDelegate.swift in Sources */,
+				A530DD4D2BD387B600F9A5C6 /* PathType.swift in Sources */,
 				A5C61E1C2BD2A4D500193137 /* Date+Extensions.swift in Sources */,
 				A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */,
+				A530DD552BD3897200F9A5C6 /* MemoView.swift in Sources */,
 				A51AD3BE2BD29BBC0067FE32 /* ContentView.swift in Sources */,
 				A5C61E222BD2A4E800193137 /* Int+Extensions.swift in Sources */,
+				A530DD4F2BD387BB00F9A5C6 /* Path.swift in Sources */,
 				A51AD3BC2BD29BBC0067FE32 /* VocieRecordApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

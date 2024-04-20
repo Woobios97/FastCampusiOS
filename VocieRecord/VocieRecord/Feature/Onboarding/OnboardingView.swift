@@ -8,11 +8,36 @@
 import SwiftUI
 
 struct OnboardingView: View {
+  @StateObject private var pathModel = PathModel()
   @StateObject private var onboardingViewModel = OnboardingViewModel()
 
   var body: some View {
     // TODO: - 화면 전환 구현 필요
-    OnboardingContentView(onboardingViewModel: onboardingViewModel)
+    /*
+     # 네비게이션스택
+     네비게이션스택을 이용 path를 통해 경로 관리를 할 수 있다.
+     destination을 통해 path의 목적지를 정한다.
+    */
+    NavigationStack(path: $pathModel.paths) {
+      OnboardingContentView(onboardingViewModel: onboardingViewModel)
+        .navigationDestination(
+          for: PathType.self,
+          destination: { pathType in
+            switch pathType {
+            case .homeView:
+              HomeView()
+                .navigationBarBackButtonHidden()
+            case .todoView:
+              TodoView()
+                .navigationBarBackButtonHidden()
+            case .memoView:
+              MemoView()
+                .navigationBarBackButtonHidden()
+            }
+          }
+        )
+    }
+    .environmentObject(pathModel)
   }
 }
 
@@ -131,9 +156,12 @@ private struct OnboardingCellView: View {
 
 // MARK: - 시작하기 버튼 뷰
 private struct StartBtnView: View {
+  // EnvironmentObject를 사용하는 곳
+  @EnvironmentObject private var pathModel: PathModel
+
   fileprivate var body: some View {
     Button {
-
+      pathModel.paths.append(.homeView) // 네비게이션스택의 사용하는 곳
     } label: {
       HStack {
         Text("시작하기")
@@ -148,9 +176,6 @@ private struct StartBtnView: View {
     .padding(.bottom, 50)
   }
 
-  func loadPackgae () {
-    
-  }
 }
 
 #Preview {

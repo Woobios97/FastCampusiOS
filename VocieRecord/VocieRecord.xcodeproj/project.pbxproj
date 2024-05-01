@@ -31,6 +31,10 @@
 		A5C61E1E2BD2A4DA00193137 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C61E1D2BD2A4DA00193137 /* Double+Extensions.swift */; };
 		A5C61E202BD2A4E100193137 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C61E1F2BD2A4E100193137 /* Color+Extensions.swift */; };
 		A5C61E222BD2A4E800193137 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C61E212BD2A4E800193137 /* Int+Extensions.swift */; };
+		A5D2BE202BE24A9C00F6B735 /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2BE1F2BE24A9C00F6B735 /* Memo.swift */; };
+		A5D2BE222BE24B0300F6B735 /* MemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2BE212BE24B0300F6B735 /* MemoViewModel.swift */; };
+		A5D2BE242BE24B0E00F6B735 /* MemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2BE232BE24B0E00F6B735 /* MemoListView.swift */; };
+		A5D2BE262BE24B1B00F6B735 /* MemoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D2BE252BE24B1B00F6B735 /* MemoListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +63,10 @@
 		A5C61E1D2BD2A4DA00193137 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
 		A5C61E1F2BD2A4E100193137 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		A5C61E212BD2A4E800193137 /* Int+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Extensions.swift"; sourceTree = "<group>"; };
+		A5D2BE1F2BE24A9C00F6B735 /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		A5D2BE212BE24B0300F6B735 /* MemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoViewModel.swift; sourceTree = "<group>"; };
+		A5D2BE232BE24B0E00F6B735 /* MemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListView.swift; sourceTree = "<group>"; };
+		A5D2BE252BE24B1B00F6B735 /* MemoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -252,6 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				A51AD3F62BD29CFD0067FE32 /* Memo */,
+				A5D2BE232BE24B0E00F6B735 /* MemoListView.swift */,
+				A5D2BE252BE24B1B00F6B735 /* MemoListViewModel.swift */,
 			);
 			path = MemoList;
 			sourceTree = "<group>";
@@ -269,6 +279,7 @@
 			isa = PBXGroup;
 			children = (
 				A530DD542BD3897200F9A5C6 /* MemoView.swift */,
+				A5D2BE212BE24B0300F6B735 /* MemoViewModel.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -283,6 +294,7 @@
 		A51AD3F82BD29D090067FE32 /* Memo */ = {
 			isa = PBXGroup;
 			children = (
+				A5D2BE1F2BE24A9C00F6B735 /* Memo.swift */,
 			);
 			path = Memo;
 			sourceTree = "<group>";
@@ -313,8 +325,8 @@
 		A51AD3FC2BD29D170067FE32 /* Path */ = {
 			isa = PBXGroup;
 			children = (
-				A530DD4C2BD387B600F9A5C6 /* PathType.swift */,
 				A530DD4E2BD387BB00F9A5C6 /* Path.swift */,
+				A530DD4C2BD387B600F9A5C6 /* PathType.swift */,
 			);
 			path = Path;
 			sourceTree = "<group>";
@@ -406,10 +418,14 @@
 				A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */,
 				A530DD552BD3897200F9A5C6 /* MemoView.swift in Sources */,
 				A5954C6B2BDE11E300635F13 /* Todo.swift in Sources */,
+				A5D2BE262BE24B1B00F6B735 /* MemoListViewModel.swift in Sources */,
 				A5954C712BDE12F400635F13 /* TodoListViewModel.swift in Sources */,
+				A5D2BE202BE24A9C00F6B735 /* Memo.swift in Sources */,
 				A51AD3BE2BD29BBC0067FE32 /* ContentView.swift in Sources */,
+				A5D2BE242BE24B0E00F6B735 /* MemoListView.swift in Sources */,
 				A5C61E222BD2A4E800193137 /* Int+Extensions.swift in Sources */,
 				A530DD4F2BD387BB00F9A5C6 /* Path.swift in Sources */,
+				A5D2BE222BE24B0300F6B735 /* MemoViewModel.swift in Sources */,
 				A51AD3BC2BD29BBC0067FE32 /* VocieRecordApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

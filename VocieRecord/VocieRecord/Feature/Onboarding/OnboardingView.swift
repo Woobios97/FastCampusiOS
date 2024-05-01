@@ -11,6 +11,7 @@ struct OnboardingView: View {
   @StateObject private var pathModel = PathModel()
   @StateObject private var onboardingViewModel = OnboardingViewModel()
   @StateObject private var todoListViewModel = TodoListViewModel()
+  @StateObject private var memoListViewModel = MemoListViewModel()
 
   var body: some View {
     // TODO: - 화면 전환 구현 필요
@@ -18,11 +19,11 @@ struct OnboardingView: View {
      # 네비게이션스택
      네비게이션스택을 이용 path를 통해 경로 관리를 할 수 있다.
      destination을 통해 path의 목적지를 정한다.
-    */
+     */
     NavigationStack(path: $pathModel.paths) {
-//      OnboardingContentView(onboardingViewModel: onboardingViewModel)
-  TodoListView()
-        .environmentObject(todoListViewModel)
+      //      OnboardingContentView(onboardingViewModel: onboardingViewModel)
+      MemoListView()
+        .environmentObject(memoListViewModel)
         .navigationDestination(
           for: PathType.self,
           destination: { pathType in
@@ -34,9 +35,16 @@ struct OnboardingView: View {
               TodoView()
                 .navigationBarBackButtonHidden()
                 .environmentObject(todoListViewModel)
-            case .memoView:
-              MemoView()
-                .navigationBarBackButtonHidden()
+            case let .memoView(isCreateMode, memo):
+              MemoView(
+                memoViewModel: isCreateMode
+                ? .init(memo: .init(title: "", content: "", date: .now))
+                : .init(memo: memo ?? .init(title: "", content: "", date: .now)),
+                isCreateMode: isCreateMode
+              )
+              .navigationBarBackButtonHidden()
+              .environmentObject(memoListViewModel)
+              // MARK: - 메모리스트 뷰에는 모드가 2개이다. 1. 생성하는 모드 2. 뷰어로 들어가서 편집하는 모드, MemoView가 스택으로 넘어갈 때, 2가지 모드를 파라미터로 받아서 뿌려줄 수 있을 것이다.
             }
           }
         )
@@ -96,10 +104,10 @@ private struct OnboardingCellListView: View {
        */
 
       /// enumerated 방법
-//      ForEach(Array(onboardingViewModel.OnboardingContents.enumerated()), id: \.element) { index, onboardingContent in
-//        OnboardingCellView(onboardingContent: onboardingContent)
-//          .tag(index)
-//      }
+      //      ForEach(Array(onboardingViewModel.OnboardingContents.enumerated()), id: \.element) { index, onboardingContent in
+      //        OnboardingCellView(onboardingContent: onboardingContent)
+      //          .tag(index)
+      //      }
 
       /// indices 방법
       ForEach(onboardingViewModel.OnboardingContents.indices, id: \.self) { index in

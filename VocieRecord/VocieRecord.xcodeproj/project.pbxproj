@@ -17,6 +17,12 @@
 		A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD502BD3894E00F9A5C6 /* HomeView.swift */; };
 		A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD522BD3896700F9A5C6 /* TodoView.swift */; };
 		A530DD552BD3897200F9A5C6 /* MemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A530DD542BD3897200F9A5C6 /* MemoView.swift */; };
+		A5954C672BDE0F6400635F13 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C662BDE0F6400635F13 /* CustomNavigationBar.swift */; };
+		A5954C692BDE0F9B00635F13 /* NavigationBtnType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C682BDE0F9B00635F13 /* NavigationBtnType.swift */; };
+		A5954C6B2BDE11E300635F13 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C6A2BDE11E300635F13 /* Todo.swift */; };
+		A5954C6D2BDE12DE00635F13 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C6C2BDE12DE00635F13 /* TodoViewModel.swift */; };
+		A5954C6F2BDE12EA00635F13 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C6E2BDE12EA00635F13 /* TodoListView.swift */; };
+		A5954C712BDE12F400635F13 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C702BDE12F400635F13 /* TodoListViewModel.swift */; };
 		A5BDA9C42BD2A81400595D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA9C32BD2A81400595D46 /* Assets.xcassets */; };
 		A5BDA9C62BD2AADF00595D46 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */; };
 		A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */; };
@@ -27,30 +33,11 @@
 		A5C61E222BD2A4E800193137 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C61E212BD2A4E800193137 /* Int+Extensions.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		A51AD3C92BD29BBE0067FE32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A51AD3B02BD29BBC0067FE32 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A51AD3B72BD29BBC0067FE32;
-			remoteInfo = VocieRecord;
-		};
-		A51AD3D32BD29BBE0067FE32 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A51AD3B02BD29BBC0067FE32 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A51AD3B72BD29BBC0067FE32;
-			remoteInfo = VocieRecord;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		A51AD3B82BD29BBC0067FE32 /* VocieRecord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VocieRecord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51AD3BB2BD29BBC0067FE32 /* VocieRecordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VocieRecordApp.swift; sourceTree = "<group>"; };
 		A51AD3BD2BD29BBC0067FE32 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A51AD3C22BD29BBE0067FE32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		A51AD3C82BD29BBE0067FE32 /* VocieRecordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocieRecordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A51AD3D22BD29BBE0067FE32 /* VocieRecordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VocieRecordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A51AD3FD2BD29EF90067FE32 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A51AD3FF2BD29FCA0067FE32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A530DD4C2BD387B600F9A5C6 /* PathType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PathType.swift; sourceTree = "<group>"; };
@@ -58,6 +45,12 @@
 		A530DD502BD3894E00F9A5C6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A530DD522BD3896700F9A5C6 /* TodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoView.swift; sourceTree = "<group>"; };
 		A530DD542BD3897200F9A5C6 /* MemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoView.swift; sourceTree = "<group>"; };
+		A5954C662BDE0F6400635F13 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
+		A5954C682BDE0F9B00635F13 /* NavigationBtnType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBtnType.swift; sourceTree = "<group>"; };
+		A5954C6A2BDE11E300635F13 /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		A5954C6C2BDE12DE00635F13 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
+		A5954C6E2BDE12EA00635F13 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
+		A5954C702BDE12F400635F13 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		A5BDA9C32BD2A81400595D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -70,20 +63,6 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		A51AD3B52BD29BBC0067FE32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A51AD3C52BD29BBE0067FE32 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A51AD3CF2BD29BBE0067FE32 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -105,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				A51AD3B82BD29BBC0067FE32 /* VocieRecord.app */,
-				A51AD3C82BD29BBE0067FE32 /* VocieRecordTests.xctest */,
-				A51AD3D22BD29BBE0067FE32 /* VocieRecordUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +182,8 @@
 		A51AD3EC2BD29C680067FE32 /* NavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				A5954C662BDE0F6400635F13 /* CustomNavigationBar.swift */,
+				A5954C682BDE0F9B00635F13 /* NavigationBtnType.swift */,
 			);
 			path = NavigationBar;
 			sourceTree = "<group>";
@@ -242,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				A51AD3F52BD29CF40067FE32 /* Todo */,
+				A5954C6E2BDE12EA00635F13 /* TodoListView.swift */,
+				A5954C702BDE12F400635F13 /* TodoListViewModel.swift */,
 			);
 			path = TodoList;
 			sourceTree = "<group>";
@@ -279,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				A530DD522BD3896700F9A5C6 /* TodoView.swift */,
+				A5954C6C2BDE12DE00635F13 /* TodoViewModel.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -308,6 +290,7 @@
 		A51AD3F92BD29D0E0067FE32 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				A5954C6A2BDE11E300635F13 /* Todo.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -356,42 +339,6 @@
 			productReference = A51AD3B82BD29BBC0067FE32 /* VocieRecord.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A51AD3C72BD29BBE0067FE32 /* VocieRecordTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A51AD3DF2BD29BBE0067FE32 /* Build configuration list for PBXNativeTarget "VocieRecordTests" */;
-			buildPhases = (
-				A51AD3C42BD29BBE0067FE32 /* Sources */,
-				A51AD3C52BD29BBE0067FE32 /* Frameworks */,
-				A51AD3C62BD29BBE0067FE32 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A51AD3CA2BD29BBE0067FE32 /* PBXTargetDependency */,
-			);
-			name = VocieRecordTests;
-			productName = VocieRecordTests;
-			productReference = A51AD3C82BD29BBE0067FE32 /* VocieRecordTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A51AD3D12BD29BBE0067FE32 /* VocieRecordUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A51AD3E22BD29BBE0067FE32 /* Build configuration list for PBXNativeTarget "VocieRecordUITests" */;
-			buildPhases = (
-				A51AD3CE2BD29BBE0067FE32 /* Sources */,
-				A51AD3CF2BD29BBE0067FE32 /* Frameworks */,
-				A51AD3D02BD29BBE0067FE32 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A51AD3D42BD29BBE0067FE32 /* PBXTargetDependency */,
-			);
-			name = VocieRecordUITests;
-			productName = VocieRecordUITests;
-			productReference = A51AD3D22BD29BBE0067FE32 /* VocieRecordUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -404,14 +351,6 @@
 				TargetAttributes = {
 					A51AD3B72BD29BBC0067FE32 = {
 						CreatedOnToolsVersion = 15.3;
-					};
-					A51AD3C72BD29BBE0067FE32 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = A51AD3B72BD29BBC0067FE32;
-					};
-					A51AD3D12BD29BBE0067FE32 = {
-						CreatedOnToolsVersion = 15.3;
-						TestTargetID = A51AD3B72BD29BBC0067FE32;
 					};
 				};
 			};
@@ -429,8 +368,6 @@
 			projectRoot = "";
 			targets = (
 				A51AD3B72BD29BBC0067FE32 /* VocieRecord */,
-				A51AD3C72BD29BBE0067FE32 /* VocieRecordTests */,
-				A51AD3D12BD29BBE0067FE32 /* VocieRecordUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -446,20 +383,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A51AD3C62BD29BBE0067FE32 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A51AD3D02BD29BBE0067FE32 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -468,16 +391,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5BDA9C62BD2AADF00595D46 /* OnboardingContent.swift in Sources */,
+				A5954C692BDE0F9B00635F13 /* NavigationBtnType.swift in Sources */,
+				A5954C6F2BDE12EA00635F13 /* TodoListView.swift in Sources */,
 				A5C61E1E2BD2A4DA00193137 /* Double+Extensions.swift in Sources */,
 				A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */,
 				A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */,
+				A5954C672BDE0F6400635F13 /* CustomNavigationBar.swift in Sources */,
 				A5C61E202BD2A4E100193137 /* Color+Extensions.swift in Sources */,
 				A5BDA9CA2BD2ABE200595D46 /* OnboardingView.swift in Sources */,
+				A5954C6D2BDE12DE00635F13 /* TodoViewModel.swift in Sources */,
 				A51AD4002BD29FCA0067FE32 /* AppDelegate.swift in Sources */,
 				A530DD4D2BD387B600F9A5C6 /* PathType.swift in Sources */,
 				A5C61E1C2BD2A4D500193137 /* Date+Extensions.swift in Sources */,
 				A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */,
 				A530DD552BD3897200F9A5C6 /* MemoView.swift in Sources */,
+				A5954C6B2BDE11E300635F13 /* Todo.swift in Sources */,
+				A5954C712BDE12F400635F13 /* TodoListViewModel.swift in Sources */,
 				A51AD3BE2BD29BBC0067FE32 /* ContentView.swift in Sources */,
 				A5C61E222BD2A4E800193137 /* Int+Extensions.swift in Sources */,
 				A530DD4F2BD387BB00F9A5C6 /* Path.swift in Sources */,
@@ -485,34 +414,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A51AD3C42BD29BBE0067FE32 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A51AD3CE2BD29BBE0067FE32 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		A51AD3CA2BD29BBE0067FE32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A51AD3B72BD29BBC0067FE32 /* VocieRecord */;
-			targetProxy = A51AD3C92BD29BBE0067FE32 /* PBXContainerItemProxy */;
-		};
-		A51AD3D42BD29BBE0067FE32 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A51AD3B72BD29BBC0067FE32 /* VocieRecord */;
-			targetProxy = A51AD3D32BD29BBE0067FE32 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A51AD3DA2BD29BBE0067FE32 /* Debug */ = {
@@ -694,82 +596,6 @@
 			};
 			name = Release;
 		};
-		A51AD3E02BD29BBE0067FE32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FQRWL84Z3B;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WooBi.VocieRecordTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VocieRecord.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VocieRecord";
-			};
-			name = Debug;
-		};
-		A51AD3E12BD29BBE0067FE32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FQRWL84Z3B;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WooBi.VocieRecordTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VocieRecord.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/VocieRecord";
-			};
-			name = Release;
-		};
-		A51AD3E32BD29BBE0067FE32 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FQRWL84Z3B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WooBi.VocieRecordUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VocieRecord;
-			};
-			name = Debug;
-		};
-		A51AD3E42BD29BBE0067FE32 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = FQRWL84Z3B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.WooBi.VocieRecordUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = VocieRecord;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -787,24 +613,6 @@
 			buildConfigurations = (
 				A51AD3DD2BD29BBE0067FE32 /* Debug */,
 				A51AD3DE2BD29BBE0067FE32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A51AD3DF2BD29BBE0067FE32 /* Build configuration list for PBXNativeTarget "VocieRecordTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A51AD3E02BD29BBE0067FE32 /* Debug */,
-				A51AD3E12BD29BBE0067FE32 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A51AD3E22BD29BBE0067FE32 /* Build configuration list for PBXNativeTarget "VocieRecordUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A51AD3E32BD29BBE0067FE32 /* Debug */,
-				A51AD3E42BD29BBE0067FE32 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

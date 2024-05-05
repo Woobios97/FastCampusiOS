@@ -35,4 +35,12 @@ extension Date {
       return formatter.string(from: self)
     }
   }
+  
+  // VoiceRecord 시간 포맷
+  var formattedVoiceRecordTime: String {
+    let formatter = DateFormatter()
+    formatter.locale = Locale(identifier: "ko_KR")
+    formatter.dateFormat = "yyyy.M.d"
+    return formatter.string(from: self)
+  }
 }

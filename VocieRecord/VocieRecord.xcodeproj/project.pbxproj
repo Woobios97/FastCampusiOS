@@ -29,6 +29,7 @@
 		A5954C6D2BDE12DE00635F13 /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C6C2BDE12DE00635F13 /* TodoViewModel.swift */; };
 		A5954C6F2BDE12EA00635F13 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C6E2BDE12EA00635F13 /* TodoListView.swift */; };
 		A5954C712BDE12F400635F13 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C702BDE12F400635F13 /* TodoListViewModel.swift */; };
+		A596A96E2BF89E6500CAAF17 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A96D2BF89E6500CAAF17 /* SettingView.swift */; };
 		A5BDA9C42BD2A81400595D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA9C32BD2A81400595D46 /* Assets.xcassets */; };
 		A5BDA9C62BD2AADF00595D46 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */; };
 		A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */; };
@@ -67,6 +68,7 @@
 		A5954C6C2BDE12DE00635F13 /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 		A5954C6E2BDE12EA00635F13 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		A5954C702BDE12F400635F13 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		A596A96D2BF89E6500CAAF17 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		A5BDA9C32BD2A81400595D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 		A51AD3F12BD29C8E0067FE32 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				A596A96D2BF89E6500CAAF17 /* SettingView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				A5954C692BDE0F9B00635F13 /* NavigationBtnType.swift in Sources */,
 				A5954C6F2BDE12EA00635F13 /* TodoListView.swift in Sources */,
 				A5C61E1E2BD2A4DA00193137 /* Double+Extensions.swift in Sources */,
+				A596A96E2BF89E6500CAAF17 /* SettingView.swift in Sources */,
 				A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */,
 				A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */,
 				A54CB46E2BE7C85500AF49E1 /* NotificationService.swift in Sources */,

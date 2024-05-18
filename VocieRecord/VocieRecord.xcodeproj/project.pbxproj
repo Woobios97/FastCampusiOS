@@ -20,6 +20,7 @@
 		A54893762BE7A17F00C1FA15 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54893752BE7A17F00C1FA15 /* Time.swift */; };
 		A54893782BE7A6D400C1FA15 /* TimerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54893772BE7A6D400C1FA15 /* TimerViewModel.swift */; };
 		A548937A2BE7A6E300C1FA15 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54893792BE7A6E300C1FA15 /* TimerView.swift */; };
+		A54CB46E2BE7C85500AF49E1 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54CB46D2BE7C85500AF49E1 /* NotificationService.swift */; };
 		A57B408D2BE62EC80063E203 /* VoiceRecorderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B408C2BE62EC80063E203 /* VoiceRecorderViewModel.swift */; };
 		A57B408F2BE62ED50063E203 /* VoiceRecorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A57B408E2BE62ED50063E203 /* VoiceRecorderView.swift */; };
 		A5954C672BDE0F6400635F13 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C662BDE0F6400635F13 /* CustomNavigationBar.swift */; };
@@ -57,6 +58,7 @@
 		A54893752BE7A17F00C1FA15 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		A54893772BE7A6D400C1FA15 /* TimerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewModel.swift; sourceTree = "<group>"; };
 		A54893792BE7A6E300C1FA15 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		A54CB46D2BE7C85500AF49E1 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		A57B408C2BE62EC80063E203 /* VoiceRecorderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderViewModel.swift; sourceTree = "<group>"; };
 		A57B408E2BE62ED50063E203 /* VoiceRecorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceRecorderView.swift; sourceTree = "<group>"; };
 		A5954C662BDE0F6400635F13 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
@@ -173,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				A51AD3BB2BD29BBC0067FE32 /* VocieRecordApp.swift */,
-				A51AD3FD2BD29EF90067FE32 /* LaunchScreen.storyboard */,
 				A51AD3FF2BD29FCA0067FE32 /* AppDelegate.swift */,
+				A51AD3FD2BD29EF90067FE32 /* LaunchScreen.storyboard */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -193,6 +195,7 @@
 		A51AD3EB2BD29C580067FE32 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A54CB46D2BE7C85500AF49E1 /* NotificationService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				A5C61E1E2BD2A4DA00193137 /* Double+Extensions.swift in Sources */,
 				A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */,
 				A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */,
+				A54CB46E2BE7C85500AF49E1 /* NotificationService.swift in Sources */,
 				A5954C672BDE0F6400635F13 /* CustomNavigationBar.swift in Sources */,
 				A5C61E202BD2A4E100193137 /* Color+Extensions.swift in Sources */,
 				A5BDA9CA2BD2ABE200595D46 /* OnboardingView.swift in Sources */,

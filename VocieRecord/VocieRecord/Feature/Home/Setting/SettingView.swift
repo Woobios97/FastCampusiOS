@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct SettingView: View {
-    var body: some View {
-      VStack {
-        // TODO: - 타이틀 뷰
-        TitleView()
+  @EnvironmentObject private var homeViewModel: HomeViewModel
 
-        Spacer()
-          .frame(height: 35)
+  var body: some View {
+    VStack {
+      // TODO: - 타이틀 뷰
+      TitleView()
 
-        // TODO: - 총 탭 카운트 뷰
-        TotalTabCountView()
+      Spacer()
+        .frame(height: 35)
 
-        Spacer()
-          .frame(height: 40)
+      // TODO: - 총 탭 카운트 뷰
+      TotalTabCountView()
 
-        // TODO: - 총 탭 무브 뷰
-        TotalTabMoveView()
+      Spacer()
+        .frame(height: 40)
 
-        Spacer() // 하위 공간 확보
-      }
+      // TODO: - 총 탭 무브 뷰
+      TotalTabMoveView()
+
+      Spacer() // 하위 공간 확보
     }
+  }
 }
 
 // MARK: - 타이틀뷰
@@ -47,16 +49,18 @@ private struct TitleView: View {
 
 // MARK: - 전체 탭 설정된 카운트 뷰
 private struct TotalTabCountView: View {
+  @EnvironmentObject private var homeViewModel: HomeViewModel
+
   fileprivate var body: some View {
     // 각각 탭 카운트 뷰 (todolist, 메모장, 음성메모)
     HStack {
-      TabCountView(title: "To do", count: 0)
+      TabCountView(title: "To do", count: homeViewModel.todosCount)
       Spacer()
         .frame(width: 70)
-      TabCountView(title: "메모", count: 2)
+      TabCountView(title: "메모", count: homeViewModel.memosCount)
       Spacer()
         .frame(width: 70)
-      TabCountView(title: "음성메모", count: 3)
+      TabCountView(title: "음성메모", count: homeViewModel.voiceRecorderCount)
     }
   }
 }
@@ -89,6 +93,8 @@ private struct TabCountView: View {
 
 // MARK: - 전체 탭 이동 뷰
 private struct TotalTabMoveView: View {
+  @EnvironmentObject private var homeViewModel: HomeViewModel
+
   fileprivate var body: some View {
     VStack {
       Rectangle()
@@ -98,22 +104,30 @@ private struct TotalTabMoveView: View {
       // 각 탭 4개 이동 뷰 컴포넌트
       TabMoveView(
         title: "To do List",
-        tabAction: {}
+        tabAction: {
+          homeViewModel.changeSelectedTab(.todoList)
+        }
       )
 
       TabMoveView(
         title: "메모장",
-        tabAction: {}
+        tabAction: {
+          homeViewModel.changeSelectedTab(.memo)
+        }
       )
 
       TabMoveView(
         title: "음성메모",
-        tabAction: {}
+        tabAction: {
+          homeViewModel.changeSelectedTab(.voiceRecorder)
+        }
       )
 
       TabMoveView(
         title: "타이머",
-        tabAction: {}
+        tabAction: {
+          homeViewModel.changeSelectedTab(.timer)
+        }
       )
 
       Rectangle()
@@ -156,5 +170,6 @@ private struct TabMoveView: View {
 }
 
 #Preview {
-    SettingView()
+  SettingView()
+    .environmentObject(HomeViewModel())
 }

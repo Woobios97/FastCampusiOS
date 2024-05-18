@@ -21,21 +21,28 @@ struct OnboardingView: View {
      destination을 통해 path의 목적지를 정한다.
      */
     NavigationStack(path: $pathModel.paths) {
-      //      OnboardingContentView(onboardingViewModel: onboardingViewModel)
-//      MemoListView()
-//        .environmentObject(memoListViewModel)
-    TimerView()
+      OnboardingContentView(onboardingViewModel: onboardingViewModel)
         .navigationDestination(
           for: PathType.self,
           destination: { pathType in
             switch pathType {
             case .homeView:
+              /*
+               HomeView에서 사용할 수 있도록, todoListViewModel과 memoListViewModel를 environmentObject로 주입시킨다.
+               왜?
+               HomeView에서 TodoView와 MemoView에 대한 Path와 기능들을 동작시킬 수 있기 때문이다.
+               */
+
               HomeView()
                 .navigationBarBackButtonHidden()
+                .environmentObject(todoListViewModel)
+                .environmentObject(memoListViewModel)
+
             case .todoView:
               TodoView()
                 .navigationBarBackButtonHidden()
                 .environmentObject(todoListViewModel)
+
             case let .memoView(isCreateMode, memo):
               MemoView(
                 memoViewModel: isCreateMode

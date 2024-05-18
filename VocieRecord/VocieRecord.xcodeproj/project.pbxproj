@@ -30,6 +30,8 @@
 		A5954C6F2BDE12EA00635F13 /* TodoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C6E2BDE12EA00635F13 /* TodoListView.swift */; };
 		A5954C712BDE12F400635F13 /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5954C702BDE12F400635F13 /* TodoListViewModel.swift */; };
 		A596A96E2BF89E6500CAAF17 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A96D2BF89E6500CAAF17 /* SettingView.swift */; };
+		A596A9702BF8A58300CAAF17 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A96F2BF8A58300CAAF17 /* Tab.swift */; };
+		A596A9722BF8A5AC00CAAF17 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596A9712BF8A5AC00CAAF17 /* HomeViewModel.swift */; };
 		A5BDA9C42BD2A81400595D46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5BDA9C32BD2A81400595D46 /* Assets.xcassets */; };
 		A5BDA9C62BD2AADF00595D46 /* OnboardingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */; };
 		A5BDA9C82BD2AB2200595D46 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */; };
@@ -69,6 +71,8 @@
 		A5954C6E2BDE12EA00635F13 /* TodoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListView.swift; sourceTree = "<group>"; };
 		A5954C702BDE12F400635F13 /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
 		A596A96D2BF89E6500CAAF17 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		A596A96F2BF8A58300CAAF17 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		A596A9712BF8A5AC00CAAF17 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		A5BDA9C32BD2A81400595D46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5BDA9C52BD2AADF00595D46 /* OnboardingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContent.swift; sourceTree = "<group>"; };
 		A5BDA9C72BD2AB2200595D46 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 			isa = PBXGroup;
 			children = (
 				A530DD502BD3894E00F9A5C6 /* HomeView.swift */,
+				A596A9712BF8A5AC00CAAF17 /* HomeViewModel.swift */,
 				A51AD3F02BD29C8B0067FE32 /* TodoList */,
 				A51AD3F42BD29CB60067FE32 /* MemoList */,
 				A51AD3F32BD29C910067FE32 /* VoiceRecorder */,
@@ -331,6 +336,7 @@
 		A51AD3FA2BD29D100067FE32 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				A596A96F2BF8A58300CAAF17 /* Tab.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -429,6 +435,7 @@
 				A5954C6F2BDE12EA00635F13 /* TodoListView.swift in Sources */,
 				A5C61E1E2BD2A4DA00193137 /* Double+Extensions.swift in Sources */,
 				A596A96E2BF89E6500CAAF17 /* SettingView.swift in Sources */,
+				A596A9722BF8A5AC00CAAF17 /* HomeViewModel.swift in Sources */,
 				A530DD532BD3896700F9A5C6 /* TodoView.swift in Sources */,
 				A530DD512BD3894E00F9A5C6 /* HomeView.swift in Sources */,
 				A54CB46E2BE7C85500AF49E1 /* NotificationService.swift in Sources */,
@@ -450,6 +457,7 @@
 				A54893782BE7A6D400C1FA15 /* TimerViewModel.swift in Sources */,
 				A5D2BE202BE24A9C00F6B735 /* Memo.swift in Sources */,
 				A51AD3BE2BD29BBC0067FE32 /* ContentView.swift in Sources */,
+				A596A9702BF8A58300CAAF17 /* Tab.swift in Sources */,
 				A5D2BE242BE24B0E00F6B735 /* MemoListView.swift in Sources */,
 				A5C61E222BD2A4E800193137 /* Int+Extensions.swift in Sources */,
 				A530DD4F2BD387BB00F9A5C6 /* Path.swift in Sources */,
